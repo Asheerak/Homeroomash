@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    body {
+      background: white !important;
+      padding: 0 !important;
+    }
+    .print\:shadow-none {
+      box-shadow: none !important;
+    }
+    .print\:border-yellow-600 {
+      border-color: #ca8a04 !important;
+    }
+  }
+}
